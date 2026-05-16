@@ -50,7 +50,7 @@ class Developer extends Employee implements Skills {
 
   @override
   void programming() {
-    print("Programming skill: Dart developer");
+    print("Programming skill: flutter developer");
   }
 
   @override
@@ -61,7 +61,7 @@ class Developer extends Employee implements Skills {
 
 // Step 5: Main function
 void main() {
-  Developer dev = Developer("Ahmed", 25, 8000);
+  Developer dev = Developer("Mina", 25, 8000);
   dev.showInfo();
   dev.programming();
   dev.communication();
