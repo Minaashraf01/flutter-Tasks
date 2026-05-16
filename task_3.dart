@@ -1,7 +1,7 @@
 void main() {
   Set<String> students = {};
 
-// Function لإضافة طالب
+// Function ADD student
   void addStudent(String name) {
     students.add(name);
   }
@@ -14,8 +14,8 @@ void main() {
   }
 
   
-  addStudent("Andrew");
-  addStudent("Ali");
+  addStudent("MINA");
+  addStudent("POLA");
   addStudent("Sara");
 
   print("Students using recursion:");
@@ -42,7 +42,7 @@ void main() {
     studentCourses[student]!.add(grade);
   }
 
-  // Function لحساب متوسط الدرجات
+  // Function averageGrade
   double averageGrade(String student) {
     var grades = studentCourses[student];
 
@@ -54,11 +54,11 @@ void main() {
     return sum / grades.length;
   }
 
-  // إضافة كورسات
-  addCourse("Andrew", "Math", 90);
-  addCourse("Andrew", "Programming", 95);
-  addCourse("Ali", "Math", 80);
+  // add course
+  addCourse("MINA", "Math3", 90);
+  addCourse("MINA", "Programming", 95);
+  addCourse("POLA", "Math3", 80);
 
-  print("\nAverage grade of Andrew:");
-  print(averageGrade("Andrew"));
+  print("\nAverage grade of MINA:");
+  print(averageGrade("MINA"));
 }
